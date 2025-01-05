@@ -204,3 +204,53 @@ address {
   background-color: #404bbf; /* Change background color */
   outline: none; /* Remove default focus outline */
 }
+/* Утилитарный класс для визуально скрытых элементов */
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Стили для секции About */
+.about-section {
+  background-color: #ffffff;
+  padding: 120px 156px;
+}
+
+.about-section ul {
+  display: flex;
+  gap: 24px;
+  width: 1128px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.about-section li {
+  width: calc((1128px - 72px) / 4); /* Ширина элемента с учетом отступов */
+  height: 104px;
+}
+
+.about-section h3 {
+  margin: 0 0 8px 0;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.about-section p {
+  margin: 0;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+}
