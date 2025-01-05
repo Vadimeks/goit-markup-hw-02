@@ -1,3 +1,4 @@
+/* Typography styles */
 .roboto-regular {
   font-family: "Roboto", serif;
   font-weight: 400;
@@ -15,6 +16,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 .roboto-regular-italic {
   font-family: "Roboto", serif;
   font-weight: 400;
@@ -39,80 +41,166 @@
   font-weight: 700;
   font-style: normal;
 }
-/* add font for all body, delete decoration a and style li */
+
+/* Global styles for body, links, and lists */
 body {
   font-family: "Roboto", "Georgia", "Palatino", "URW Palladio L", serif;
-  color: #434455;
-  background-color: #ffffff;
+  color: #434455; /* Text color */
+  background-color: #ffffff; /* Background color */
 }
+
 a {
-  text-decoration: none;
-  color: #2e2f42;
+  text-decoration: none; /* Remove underline from links */
+  color: #2e2f42; /* Default link color */
   font-style: normal;
 }
+
 a:hover,
 a:focus {
-  color: #4d5ae5;
+  color: #4d5ae5; /* Change link color on hover/focus */
 }
+
 li {
-  list-style-type: none;
+  list-style-type: none; /* Remove default bullet points */
 }
-/* styles for header */
+
+/* Header styles */
 header {
-  display: flex;
-  padding-top: 24px;
-  align-items: center;
+  display: flex; /* Flex container */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo, nav, and address */
+  width: 100%; /* Full width */
+  max-width: 1440px; /* Maximum width */
+  height: 72px; /* Fixed height */
+  margin: 0 auto; /* Center the header */
+  padding: 0 156px; /* Padding left and right */
+  box-sizing: border-box; /* Include padding in the width */
 }
-/* styles of nav block */
+
+/* Navigation styles */
 nav {
-  color: #2e2f42;
-  display: flex;
-  align-items: center;
+  display: flex; /* Flex container for nav */
+  align-items: center; /* Center nav items vertically */
+  gap: 40px; /* Space between nav links (Studio, Portfolio, Contacts) */
 }
-nav a {
-  color: #2e2f42;
-  text-transform: none;
-  font-size: 16px;
-  width: 115px;
-  height: 24px;
-  font-weight: 500;
-}
+
 nav ul {
-  display: flex;
-  padding-left: 76px;
-  padding-right: 332px;
-  width: 115px;
-  height: 24px;
-  font-weight: 500;
+  display: flex; /* Flex container for list */
+  align-items: center; /* Center list items vertically */
+  gap: 40px; /* Space between each list item */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove bullet points */
 }
-.logo {
-  color: #4d5ae5;
+
+nav a {
+  color: #2e2f42; /* Default link color */
+  font-size: 16px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  text-decoration: none; /* Remove underline */
 }
-.full-logo {
-  font-family: "Raleway";
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 18px;
-  padding-left: 156px;
+
+nav a:hover,
+nav a:focus {
+  color: #4d5ae5; /* Hover and focus color */
+  text-decoration: none; /* Remove underline */
 }
-.studio {
-  padding-right: 40px;
+
+/* Address styles */
+address {
+  display: flex; /* Выстраиваем элементы в строку */
+  align-items: center; /* Центрируем элементы вертикально */
+  gap: 40px; /* Расстояние между email и телефоном */
 }
-.contacts {
-  padding-left: 40px;
+
+.address {
+  display: flex; /* Гибкий контейнер для email и телефона */
+  flex-direction: row; /* Элементы в строку */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  gap: 40px; /* Расстояние между элементами */
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем отступы */
+  list-style: none; /* Убираем маркеры списка */
 }
-/* styles for address */
-address ul {
-  display: flex;
-  padding-right: 156px;
-  align-items: center;
+
+.address li {
+  display: inline; /* Каждый элемент в строку */
 }
 
 .address a:hover,
-a:focus {
-  color: #4d5ae5;
-  text-decoration: none;
+.address a:focus {
+  color: #4d5ae5; /* Hover and focus color */
+  text-decoration: none; /* Remove underline */
 }
-.email {
-  padding-right: 40px;
+
+.full-logo {
+  display: inline-block; /* Убедимся, что логотип занимает одно целое пространство */
+  font-family: "Raleway", serif; /* Используем правильный шрифт */
+  font-size: 18px; /* Размер шрифта */
+  font-weight: 700; /* Жирный шрифт */
+  text-transform: uppercase; /* Текст в верхнем регистре */
+  text-decoration: none; /* Уберём подчеркивание */
+  margin-right: 72px; /* Расстояние между логотипом и навигацией */
+}
+
+.logo {
+  color: #4d5ae5; /* Цвет для "Web" */
+  display: inline; /* Текст на одной линии */
+}
+
+/* Styles for the main section */
+.main-screen {
+  width: 100%; /* Full width */
+  max-width: 1440px; /* Maximum width */
+  height: 600px; /* Fixed height */
+  background-color: #2e2f42; /* Background color */
+  margin: 0 auto; /* Center section horizontally */
+  display: flex; /* Flexbox container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  position: relative; /* Position for absolute children */
+}
+
+/* Heading styles */
+.main-screen h1 {
+  width: 496px; /* Block width */
+  height: 120px; /* Block height */
+  font-family: "Roboto", serif; /* Font family */
+  font-weight: 700; /* Bold text */
+  font-size: 56px; /* Font size */
+  color: #ffffff; /* Text color */
+  text-align: center; /* Center text horizontally */
+  margin: 188px auto 0; /* Top margin from section top */
+  padding-left: 472px; /* Left padding */
+  padding-right: 472px; /* Right padding */
+}
+
+/* Button styles */
+.main-screen button {
+  width: 169px; /* Button width */
+  height: 56px; /* Button height */
+  font-family: "Roboto", serif; /* Font family */
+  font-weight: 500; /* Medium text */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* Text color */
+  background-color: #4d5ae5; /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  margin-top: 48px; /* Margin from heading */
+  position: absolute; /* Absolute positioning */
+  bottom: 188px; /* Distance from bottom of section */
+  left: calc(50% - 84.5px); /* Center button horizontally */
+  text-align: center; /* Center text */
+  display: flex; /* Flex container for text */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Button hover and focus styles */
+.main-screen button:hover,
+.main-screen button:focus {
+  background-color: #404bbf; /* Change background color */
+  outline: none; /* Remove default focus outline */
 }
