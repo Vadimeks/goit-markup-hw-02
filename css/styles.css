@@ -39,18 +39,80 @@
   font-weight: 700;
   font-style: normal;
 }
-
+/* add font for all body, delete decoration a and style li */
 body {
   font-family: "Roboto", "Georgia", "Palatino", "URW Palladio L", serif;
-  color: 434455;
+  color: #434455;
   background-color: #ffffff;
 }
 a {
   text-decoration: none;
+  color: #2e2f42;
+  font-style: normal;
+}
+a:hover,
+a:focus {
+  color: #4d5ae5;
 }
 li {
   list-style-type: none;
 }
+/* styles for header */
+header {
+  display: flex;
+  padding-top: 24px;
+  align-items: center;
+}
+/* styles of nav block */
 nav {
   color: #2e2f42;
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: #2e2f42;
+  text-transform: none;
+  font-size: 16px;
+  width: 115px;
+  height: 24px;
+  font-weight: 500;
+}
+nav ul {
+  display: flex;
+  padding-left: 76px;
+  padding-right: 332px;
+  width: 115px;
+  height: 24px;
+  font-weight: 500;
+}
+.logo {
+  color: #4d5ae5;
+}
+.full-logo {
+  font-family: "Raleway";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-left: 156px;
+}
+.studio {
+  padding-right: 40px;
+}
+.contacts {
+  padding-left: 40px;
+}
+/* styles for address */
+address ul {
+  display: flex;
+  padding-right: 156px;
+  align-items: center;
+}
+
+.address a:hover,
+a:focus {
+  color: #4d5ae5;
+  text-decoration: none;
+}
+.email {
+  padding-right: 40px;
 }
