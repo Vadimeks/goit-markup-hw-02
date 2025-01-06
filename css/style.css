@@ -44,7 +44,7 @@
 
 /* Global styles for body, links, and lists */
 body {
-  font-family: "Roboto", "Georgia", "Palatino", "URW Palladio L", serif;
+  font-family: "Roboto", "Georgia", "Palatino", "URW Palladio L", sans-serif;
   color: #434455; /* Text color */
   background-color: #ffffff; /* Background color */
 }
@@ -106,14 +106,14 @@ nav a:focus {
   text-decoration: none; /* Remove underline */
 }
 
-/* Address styles */
+/* Address (nav) styles */
 address {
   display: flex; /* Выстраиваем элементы в строку */
   align-items: center; /* Центрируем элементы вертикально */
   gap: 40px; /* Расстояние между email и телефоном */
 }
 
-.address {
+.address ul {
   display: flex; /* Гибкий контейнер для email и телефона */
   flex-direction: row; /* Элементы в строку */
   align-items: center; /* Выравниваем элементы по вертикали */
@@ -121,6 +121,7 @@ address {
   margin: 0; /* Убираем отступы */
   padding: 0; /* Убираем отступы */
   list-style: none; /* Убираем маркеры списка */
+  font-style: normal;
 }
 
 .address li {
@@ -132,20 +133,44 @@ address {
   color: #4d5ae5; /* Hover and focus color */
   text-decoration: none; /* Remove underline */
 }
-
+.contacts {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: #404bbf;
+}
 .full-logo {
   display: inline-block; /* Убедимся, что логотип занимает одно целое пространство */
-  font-family: "Raleway", serif; /* Используем правильный шрифт */
+  font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
   font-size: 18px; /* Размер шрифта */
   font-weight: 700; /* Жирный шрифт */
   text-transform: uppercase; /* Текст в верхнем регистре */
   text-decoration: none; /* Уберём подчеркивание */
   margin-right: 72px; /* Расстояние между логотипом и навигацией */
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
 }
 
 .logo {
-  color: #4d5ae5; /* Цвет для "Web" */
+  color: #2e2f42; /* Цвет для "Studio" */
   display: inline; /* Текст на одной линии */
+}
+.logo:hover,
+.logo:focus {
+  color: #404bbf;
+}
+.navi {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.navi a:hover,
+.navi a:focus {
+  color: #404bbf;
 }
 
 /* Styles for the main section */
@@ -162,7 +187,7 @@ address {
 }
 
 /* Heading styles */
-.main-screen h1 {
+.main-h {
   width: 496px; /* Block width */
   height: 120px; /* Block height */
   font-family: "Roboto", serif; /* Font family */
@@ -173,13 +198,15 @@ address {
   margin: 188px auto 0; /* Top margin from section top */
   padding-left: 472px; /* Left padding */
   padding-right: 472px; /* Right padding */
+  line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 
 /* Button styles */
-.main-screen button {
+.order {
   width: 169px; /* Button width */
   height: 56px; /* Button height */
-  font-family: "Roboto", serif; /* Font family */
+  font-family: "Roboto", sans-serif; /* Font family */
   font-weight: 500; /* Medium text */
   font-size: 16px; /* Font size */
   color: #ffffff; /* Text color */
@@ -196,14 +223,17 @@ address {
   align-items: center; /* Center text vertically */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s ease; /* Smooth color transition */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 /* Button hover and focus styles */
-.main-screen button:hover,
-.main-screen button:focus {
+.order:hover,
+.order:focus {
   background-color: #404bbf; /* Change background color */
   outline: none; /* Remove default focus outline */
 }
+/* Section About US */
 /* Утилитарный класс для визуально скрытых элементов */
 .visual-hidden {
   position: absolute;
@@ -230,7 +260,7 @@ address {
   gap: 24px;
   max-width: 1128px;
   margin: 0 auto;
-  padding: 120px 156px;
+  padding: 120px 120px 156px 156px;
   list-style: none;
   justify-content: center;
 }
@@ -240,22 +270,24 @@ address {
   height: 104px;
 }
 
-.about-section h3 {
+.third-header {
   margin: 0 0 8px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
+  letter-spacing: 0.02em;
 }
 
-.about-section p {
+.paragraf {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #434455;
+  letter-spacing: 0.02em;
 }
 /* Section Team */
 .team-section {
@@ -267,16 +299,20 @@ address {
   margin: 0 auto;
 }
 
-.team-section h2 {
-  width: 162px;
-  height: 40px;
-  padding: 120px 639px 72px;
+.second-header {
+  width: 162px; /* Фиксированная ширина заголовка */
+  margin: 0 auto 72px; /* Центрирование с отступами */
   font-family: "Roboto", serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 40px; /* Высота строки равна высоте текста */
   color: #2e2f42;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  display: block; /* Блоковый элемент для правильного позиционирования */
+  padding-top: 120px;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
 }
 
 .team-section ul {
@@ -287,7 +323,7 @@ address {
   list-style: none;
 }
 
-.team-section li {
+.our-team {
   width: 264px;
   height: 380px;
   background-color: #ffffff;
@@ -309,7 +345,7 @@ address {
   border-top-right-radius: 4px; /* Закругление верхнего правого угла картинки */
 }
 
-.team-section h3 {
+.team-section .third-header {
   margin: 0 0 8px;
   font-family: "Roboto", serif;
   font-weight: 500;
@@ -317,9 +353,10 @@ address {
   line-height: 1.2;
   text-align: center;
   color: #2e2f42;
+  padding-top: 32px;
 }
 
-.team-section p {
+.team-section .paragraf {
   margin: 0 0 32px;
   text-align: center;
 }
@@ -328,13 +365,14 @@ address {
 .portfolio {
   width: 100%;
   max-width: 1128px;
-  height: 1000px;
+  height: 100%;
+  max-height: 1000px;
   margin: 0 auto;
   background: #ffffff;
-  padding: 120px 156px;
+  padding: 120px 156px 120px 156px;
 }
 
-.portfolio h2 {
+.portfolio .second-header {
   display: block; /* Убедимся, что элемент ведет себя как блочный */
   margin: 0 auto; /* Отступ в 72px снизу */
   font-family: "Roboto", serif;
@@ -344,6 +382,9 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding-bottom: 72px;
+  padding-top: 0;
+  line-height: 1.11;
+  text-transform: capitalize;
 }
 .portfolio ul {
   display: flex;
@@ -369,23 +410,27 @@ address {
   display: block;
 }
 
-.portfolio h3 {
-  margin: 16px 0 8px; /* Отступы внутри элемента */
+.portfolio .third-header {
+  margin: 0 0 8px; /* Отступы внутри элемента */
   font-family: "Roboto", serif;
   font-size: 20px;
   font-weight: 500;
-  text-align: center;
   color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+  padding-top: 32px;
 }
 
-.portfolio p {
+.portfolio .paragraf {
   font-family: "Roboto", serif;
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
-  color: #2e2f42;
+  color: #434455;
+  padding-left: 16px;
+  padding-top: 8px;
 }
-
+/* Footer section */
 footer {
   width: 100%;
   max-width: 1440px;
@@ -399,7 +444,7 @@ footer {
   box-sizing: border-box; /* Учитываем padding в общей высоте */
 }
 
-footer p {
+footer .info-block p {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -410,10 +455,15 @@ footer p {
   text-align: left;
 }
 
-footer div {
+footer .info-block {
   width: 264px;
   height: 112px;
   margin: 0 0 0 156px; /* Отступ слева */
+}
+footer .paragraf {
+  line-height: 1.5;
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
 }
 footer .full-logo {
   display: inline-block; /* Убедимся, что логотип занимает одно целое пространство */
@@ -422,15 +472,19 @@ footer .full-logo {
   font-weight: 700; /* Жирный шрифт */
   text-transform: uppercase; /* Текст в верхнем регистре */
   text-decoration: none; /* Уберём подчеркивание */
-  margin-right: 72px; /* Расстояние между логотипом и навигацией */
+  margin-bottom: 16px; /* Расстояние между логотипом и навигацией */
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: #f4f4fd;
 }
 footer .logo {
-  color: #4d5ae5; /* Цвет для "Web" */
+  color: #4d5ae5; /* Цвет для "Studio" */
   display: inline; /* Текст на одной линии */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 footer a:hover,
 footer a:focus {
-  color: #4d5ae5; /* Hover and focus color */
+  color: #404bbf; /* Hover and focus color */
   text-decoration: none; /* Remove underline */
 }
