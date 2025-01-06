@@ -44,7 +44,7 @@
 
 /* Global styles for body, links, and lists */
 body {
-  font-family: "Roboto", "Georgia", "Palatino", "URW Palladio L", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455; /* Text color */
   background-color: #ffffff; /* Background color */
 }
@@ -111,6 +111,7 @@ address {
   display: flex; /* Выстраиваем элементы в строку */
   align-items: center; /* Центрируем элементы вертикально */
   gap: 40px; /* Расстояние между email и телефоном */
+  font-style: normal;
 }
 
 .address ul {
@@ -167,9 +168,10 @@ address {
 .navi {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
-.navi a:hover,
-.navi a:focus {
+.navi:hover,
+.navi:focus {
   color: #404bbf;
 }
 
@@ -228,10 +230,12 @@ address {
 }
 
 /* Button hover and focus styles */
+
 .order:hover,
 .order:focus {
-  background-color: #404bbf; /* Change background color */
-  outline: none; /* Remove default focus outline */
+  background-color: #4d5ae5; /* Цвет фона кнопки при наведении или фокусе */
+  color: #404bbf; /* Цвет текста при наведении или фокусе */
+  outline: none; /* Убираем стандартную рамку при фокусе */
 }
 /* Section About US */
 /* Утилитарный класс для визуально скрытых элементов */
@@ -308,6 +312,7 @@ address {
   line-height: 40px; /* Высота строки равна высоте текста */
   color: #2e2f42;
   text-align: center;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   display: block; /* Блоковый элемент для правильного позиционирования */
@@ -354,6 +359,7 @@ address {
   text-align: center;
   color: #2e2f42;
   padding-top: 32px;
+  line-height: 1.11;
 }
 
 .team-section .paragraf {
