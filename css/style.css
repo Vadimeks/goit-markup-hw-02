@@ -437,7 +437,7 @@ address {
   padding-top: 8px;
 }
 /* Footer section */
-footer {
+.footer-info {
   width: 100%;
   max-width: 1440px;
   height: 312px;
@@ -449,29 +449,23 @@ footer {
   padding: 100px 0; /* Отступы сверху и снизу */
   box-sizing: border-box; /* Учитываем padding в общей высоте */
 }
-
-footer .info-block p {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  text-align: left;
-}
-
-footer .info-block {
+footer .info {
   width: 264px;
   height: 112px;
   margin: 0 0 0 156px; /* Отступ слева */
 }
-footer .paragraf {
-  line-height: 1.5;
-  color: #f4f4fd;
+.footer-paragraph {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
+  text-align: left;
+  line-height: 1.5;
 }
-footer .full-logo {
+
+.footer-logo {
   display: inline-block; /* Убедимся, что логотип занимает одно целое пространство */
   font-family: "Raleway", serif; /* Используем правильный шрифт */
   font-size: 18px; /* Размер шрифта */
@@ -479,18 +473,15 @@ footer .full-logo {
   text-transform: uppercase; /* Текст в верхнем регистре */
   text-decoration: none; /* Уберём подчеркивание */
   margin-bottom: 16px; /* Расстояние между логотипом и навигацией */
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #f4f4fd;
-}
-footer .logo {
-  color: #4d5ae5; /* Цвет для "Studio" */
-  display: inline; /* Текст на одной линии */
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
-footer a:hover,
-footer a:focus {
+.footer-span {
+  color: #4d5ae5; /* Цвет для "Studio" */
+}
+.footer-logo:hover,
+.footer-logo:focus {
   color: #404bbf; /* Hover and focus color */
   text-decoration: none; /* Remove underline */
 }
