@@ -134,7 +134,7 @@ address {
   color: #4d5ae5; /* Hover and focus color */
   text-decoration: none; /* Remove underline */
 }
-.contacts {
+nav ul .contacts {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -168,7 +168,7 @@ address {
 .navi {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: #2e2f42;
 }
 .navi:hover,
 .navi:focus {
@@ -233,8 +233,8 @@ address {
 
 .order:hover,
 .order:focus {
-  background-color: #4d5ae5; /* Цвет фона кнопки при наведении или фокусе */
-  color: #404bbf; /* Цвет текста при наведении или фокусе */
+  background-color: #404bbf; /* Цвет фона кнопки при наведении или фокусе */
+
   outline: none; /* Убираем стандартную рамку при фокусе */
 }
 /* Section About US */
@@ -467,18 +467,18 @@ footer .info {
 
 .footer-logo {
   display: inline-block; /* Убедимся, что логотип занимает одно целое пространство */
-  font-family: "Raleway", serif; /* Используем правильный шрифт */
+  font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
   font-size: 18px; /* Размер шрифта */
   font-weight: 700; /* Жирный шрифт */
   text-transform: uppercase; /* Текст в верхнем регистре */
   text-decoration: none; /* Уберём подчеркивание */
   margin-bottom: 16px; /* Расстояние между логотипом и навигацией */
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
 }
 .footer-span {
-  color: #4d5ae5; /* Цвет для "Studio" */
+  color: #f4f4fd; /* Цвет для "Studio" */
 }
 .footer-logo:hover,
 .footer-logo:focus {
