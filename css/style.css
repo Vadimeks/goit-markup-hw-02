@@ -83,67 +83,7 @@ nav {
   align-items: center; /* Center nav items vertically */
   gap: 40px; /* Space between nav links (Studio, Portfolio, Contacts) */
 }
-
-nav ul {
-  display: flex; /* Flex container for list */
-  align-items: center; /* Center list items vertically */
-  gap: 40px; /* Space between each list item */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  list-style: none; /* Remove bullet points */
-}
-
-nav a {
-  color: #2e2f42; /* Default link color */
-  font-size: 16px; /* Font size */
-  font-weight: 500; /* Medium font weight */
-  text-decoration: none; /* Remove underline */
-}
-
-nav a:hover,
-nav a:focus {
-  color: #4d5ae5; /* Hover and focus color */
-  text-decoration: none; /* Remove underline */
-}
-
-/* Address (nav) styles */
-address {
-  display: flex; /* Выстраиваем элементы в строку */
-  align-items: center; /* Центрируем элементы вертикально */
-  gap: 40px; /* Расстояние между email и телефоном */
-  font-style: normal;
-}
-
-.address ul {
-  display: flex; /* Гибкий контейнер для email и телефона */
-  flex-direction: row; /* Элементы в строку */
-  align-items: center; /* Выравниваем элементы по вертикали */
-  gap: 40px; /* Расстояние между элементами */
-  margin: 0; /* Убираем отступы */
-  padding: 0; /* Убираем отступы */
-  list-style: none; /* Убираем маркеры списка */
-  font-style: normal;
-}
-
-.address li {
-  display: inline; /* Каждый элемент в строку */
-}
-
-.address a:hover,
-.address a:focus {
-  color: #4d5ae5; /* Hover and focus color */
-  text-decoration: none; /* Remove underline */
-}
-nav ul .contacts {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-.contacts a:hover,
-.contacts a:focus {
-  color: #404bbf;
-}
+/* logotype  */
 .full-logo {
   display: inline-block; /* Убедимся, что логотип занимает одно целое пространство */
   font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
@@ -156,27 +96,62 @@ nav ul .contacts {
   letter-spacing: 0.03em;
   color: #4d5ae5;
 }
-
-.logo {
+.logo-studio {
   color: #2e2f42; /* Цвет для "Studio" */
   display: inline; /* Текст на одной линии */
 }
-.logo:hover,
-.logo:focus {
+.full-logo .logo-studio:hover,
+.full-logo .logo-studio:focus {
   color: #404bbf;
 }
-.navi {
+/* Navigation list */
+nav ul {
+  display: flex; /* Flex container for list */
+  align-items: center; /* Center list items vertically */
+  gap: 40px; /* Space between each list item */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove bullet points */
+}
+.navigation-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  font-size: 16px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  text-decoration: none; /* Remove underline */
 }
-.navi:hover,
-.navi:focus {
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #404bbf;
+}
+/* Address (navigation) styles */
+.address {
+  font-style: normal;
+}
+.address ul {
+  display: flex; /* Гибкий контейнер для email и телефона */
+  flex-direction: row; /* Элементы в строку */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  gap: 40px; /* Расстояние между элементами */
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем отступы */
+  list-style: none; /* Убираем маркеры списка */
+  font-style: normal;
+}
+.address-content a {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.address-content a:hover,
+.address-content a:focus {
   color: #404bbf;
 }
 
-/* Styles for the main section */
-.main-screen {
+/* 1st section styles*/
+.first-section {
   width: 100%; /* Full width */
   max-width: 1440px; /* Maximum width */
   height: 600px; /* Fixed height */
@@ -188,8 +163,8 @@ nav ul .contacts {
   position: relative; /* Position for absolute children */
 }
 
-/* Heading styles */
-.main-h {
+/* H1 styles */
+.first-header {
   width: 496px; /* Block width */
   height: 120px; /* Block height */
   font-family: "Roboto", serif; /* Font family */
@@ -205,7 +180,7 @@ nav ul .contacts {
 }
 
 /* Button styles */
-.order {
+.order-button {
   width: 169px; /* Button width */
   height: 56px; /* Button height */
   font-family: "Roboto", sans-serif; /* Font family */
@@ -230,15 +205,19 @@ nav ul .contacts {
 }
 
 /* Button hover and focus styles */
-
-.order:hover,
-.order:focus {
+.order-button:hover,
+.order-button:focus {
   background-color: #404bbf; /* Цвет фона кнопки при наведении или фокусе */
-
   outline: none; /* Убираем стандартную рамку при фокусе */
 }
-/* Section About US */
-/* Утилитарный класс для визуально скрытых элементов */
+/* Second section About US */
+.about-section {
+  background-color: #ffffff;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* Hidden H2 header */
 .visual-hidden {
   position: absolute;
   width: 1px;
@@ -251,14 +230,6 @@ nav ul .contacts {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.about-section {
-  background-color: #ffffff;
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .about-section ul {
   display: flex;
   gap: 24px;
@@ -268,23 +239,25 @@ nav ul .contacts {
   list-style: none;
   justify-content: center;
 }
-
 .about-section li {
   width: calc((1128px - 72px) / 4);
   height: 104px;
 }
-
-.third-header {
+.about-list {
+  background-color: #ffffff;
+}
+/* H3 header styles */
+.about-list .third-header {
   margin: 0 0 8px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  line-height: 1.2;
 }
-
-.paragraf {
+/* Paragraph styles */
+.about-section .paragraph {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -293,7 +266,7 @@ nav ul .contacts {
   color: #434455;
   letter-spacing: 0.02em;
 }
-/* Section Team */
+/* Section Our Team */
 .team-section {
   max-width: 1440px;
   width: 100%;
@@ -302,7 +275,7 @@ nav ul .contacts {
   padding-bottom: 120px;
   margin: 0 auto;
 }
-
+/* H2 styles */
 .second-header {
   width: 162px; /* Фиксированная ширина заголовка */
   margin: 0 auto 72px; /* Центрирование с отступами */
@@ -319,7 +292,6 @@ nav ul .contacts {
   padding-top: 120px;
   white-space: nowrap; /* Запрещаем перенос текста на новую строку */
 }
-
 .team-section ul {
   display: flex;
   gap: 24px;
@@ -327,8 +299,7 @@ nav ul .contacts {
   justify-content: center;
   list-style: none;
 }
-
-.our-team {
+.team-list {
   width: 264px;
   height: 380px;
   background-color: #ffffff;
@@ -336,12 +307,6 @@ nav ul .contacts {
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214; /* Тени */
 }
-
-.team-section .team-card-image {
-  padding: 0 16px;
-  margin-bottom: 32px;
-}
-
 .team-section img {
   width: 264px;
   height: 260px;
@@ -349,7 +314,6 @@ nav ul .contacts {
   border-top-left-radius: 4px; /* Закругление верхнего левого угла картинки */
   border-top-right-radius: 4px; /* Закругление верхнего правого угла картинки */
 }
-
 .team-section .third-header {
   margin: 0 0 8px;
   font-family: "Roboto", serif;
@@ -361,14 +325,13 @@ nav ul .contacts {
   padding-top: 32px;
   line-height: 1.11;
 }
-
-.team-section .paragraf {
+.team-section .paragraph {
   margin: 0 0 32px;
   text-align: center;
 }
 
 /* Section Portfolio */
-.portfolio {
+.portfolio-section {
   width: 100%;
   max-width: 1128px;
   height: 100%;
@@ -378,7 +341,7 @@ nav ul .contacts {
   padding: 120px 156px 120px 156px;
 }
 
-.portfolio .second-header {
+.portfolio-section .second-header {
   display: block; /* Убедимся, что элемент ведет себя как блочный */
   margin: 0 auto; /* Отступ в 72px снизу */
   font-family: "Roboto", serif;
@@ -392,7 +355,7 @@ nav ul .contacts {
   line-height: 1.11;
   text-transform: capitalize;
 }
-.portfolio ul {
+.portfolio-section ul {
   display: flex;
   flex-wrap: wrap; /* Если потребуется, элементы переносятся */
   gap: 24px; /* Отступы между элементами списка */
@@ -402,7 +365,7 @@ nav ul .contacts {
   list-style: none;
 }
 
-.portfolio li {
+.portfolio-section li {
   width: 360px;
   height: 420px;
   background: #ffffff;
@@ -410,13 +373,13 @@ nav ul .contacts {
   box-sizing: border-box; /* Учитываем бордер в общих размерах */
 }
 
-.portfolio img {
+.portfolio-section img {
   width: 360px;
   height: 300px;
   display: block;
 }
 
-.portfolio .third-header {
+.portfolio-section .third-header {
   margin: 0 0 8px; /* Отступы внутри элемента */
   font-family: "Roboto", serif;
   font-size: 20px;
@@ -428,7 +391,7 @@ nav ul .contacts {
   padding-top: 32px;
 }
 
-.portfolio .paragraf {
+.portfolio-section .paragraph {
   font-family: "Roboto", serif;
   font-size: 16px;
   font-weight: 400;
@@ -437,7 +400,7 @@ nav ul .contacts {
   padding-top: 8px;
 }
 /* Footer section */
-.footer-info {
+.footer-section {
   width: 100%;
   max-width: 1440px;
   height: 312px;
@@ -449,23 +412,12 @@ nav ul .contacts {
   padding: 100px 0; /* Отступы сверху и снизу */
   box-sizing: border-box; /* Учитываем padding в общей высоте */
 }
-footer .info {
+.info-box {
   width: 264px;
   height: 112px;
   margin: 0 0 0 156px; /* Отступ слева */
 }
-.footer-paragraph {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.footer-logo {
+.footer-section .full-logo {
   display: inline-block; /* Убедимся, что логотип занимает одно целое пространство */
   font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
   font-size: 18px; /* Размер шрифта */
@@ -477,11 +429,26 @@ footer .info {
   letter-spacing: 0.03em;
   color: #4d5ae5;
 }
-.footer-span {
+.footer-section .logo-studio {
   color: #f4f4fd; /* Цвет для "Studio" */
 }
-.footer-logo:hover,
-.footer-logo:focus {
+.footer-section .full-logo:hover,
+.footer-section .full-logo:focus {
   color: #404bbf; /* Hover and focus color */
   text-decoration: none; /* Remove underline */
+}
+.footer-section .logo-studio:hover,
+.footer-section .logo-studio:focus {
+  color: #404bbf; /* Hover and focus color */
+  text-decoration: none; /* Remove underline */
+}
+.footer-section .paragraph {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  text-align: left;
+  line-height: 1.5;
 }
