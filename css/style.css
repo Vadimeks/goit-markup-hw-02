@@ -377,6 +377,7 @@ nav ul {
   width: 360px;
   height: 300px;
   display: block;
+  padding-bottom: 32px;
 }
 
 .portfolio-section .third-header {
@@ -388,7 +389,6 @@ nav ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-left: 16px;
-  padding-top: 32px;
 }
 
 .portfolio-section .paragraph {
@@ -397,7 +397,7 @@ nav ul {
   font-weight: 400;
   color: #434455;
   padding-left: 16px;
-  padding-top: 8px;
+  padding-bottom: 32px;
 }
 /* Footer section */
 .footer-section {
