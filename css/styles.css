@@ -54,9 +54,7 @@ li {
   display: flex; /* Flex container for list */
   gap: 40px; /* Space between each list item */
 }
-.nav-items {
-}
-.nav-link {
+.nav-items .nav-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -126,8 +124,7 @@ li {
   outline: none; /* Убираем стандартную рамку при фокусе */
 }
 /* Second section About US */
-.about-section {
-}
+.about-section 
 /* Hidden H2 header */
 .visual-hidden {
   position: absolute;
