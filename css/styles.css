@@ -41,7 +41,7 @@ li {
   letter-spacing: 0.03em;
   color: #4d5ae5;
 }
-.logo-part {
+.header-logo .logo-part {
   color: #2e2f42; /* Цвет для "Studio" */
 }
 .logo:hover,
