@@ -2,8 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff; /* Background color */
   color: #434455; /* Text color */
-  width: 100%; /* Full width */
-  max-width: 1440px; /* Maximum width */
   font-style: normal;
   margin: 0 auto; /* Center section horizontally */
 }
@@ -19,15 +17,9 @@ li {
 }
 /* Header styles */
 .header-section {
-  height: 72px; /* Fixed height */
-  justify-content: space-between; /* Space between logo, nav, and address */
-  display: flex; /* Flex container */
 }
 /* Navigation styles */
 .header-nav {
-  display: flex; /* Flex container for nav */
-  align-items: center; /* Center nav items vertically */
-  gap: 40px; /* Space between nav links (Studio, Portfolio, Contacts) */
 }
 /* logotype  */
 .header-logo {
@@ -35,13 +27,11 @@ li {
   font-size: 18px; /* Размер шрифта */
   font-weight: 700; /* Жирный шрифт */
   text-transform: uppercase; /* Текст в верхнем регистре */
-  margin-right: 72px; /* Расстояние между логотипом и навигацией */
-  margin-left: 156px; /* Расстояние между логотипом и левым краем */
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
 }
-.header-logo .logo-part {
+.logo-part {
   color: #2e2f42; /* Цвет для "Studio" */
 }
 .logo:hover,
@@ -50,11 +40,12 @@ li {
 .logo-part:focus {
   color: #404bbf;
 }
+/* Navigation UL styles */
 .nav-list {
-  display: flex; /* Flex container for list */
-  gap: 40px; /* Space between each list item */
 }
-.nav-items .nav-link {
+.nav-items {
+}
+.nav-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -65,15 +56,13 @@ li {
 .nav-link:focus {
   color: #404bbf;
 }
+/* Navigotion Address block */
 .nav-address {
-  margin-right: 156px;
-  align-items: center;
-  display: flex;
 }
+/* Address section UL styles */
 .address-list {
-  display: flex; /* Гибкий контейнер для email и телефона */
-  gap: 40px; /* Space between each list item */
 }
+/* Address section LI styles */
 .address-items {
   font-size: 16px;
   line-height: 1.5;
@@ -86,34 +75,24 @@ li {
 .address-link:focus {
   color: #404bbf;
 }
+/* Firts section styles */
 .first-section {
-  height: 600px; /* Fixed height */
   background-color: #2e2f42; /* Background color */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  display: flex; /* Flexbox container */
 }
+/* 1st section H1 styles */
 .header-one {
   font-weight: 700; /* Bold text */
   font-size: 56px; /* Font size */
   color: #ffffff; /* Text color */
-  width: 496px; /* Block width */
-  height: 120px; /* Block height */
-  text-align: center; /* Center text horizontally */
-  margin: 188px auto 0; /* Top margin from section top */
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
+/* 1st section Button styles */
 .button {
   font-weight: 500; /* Medium text */
   font-size: 16px; /* Font size */
   color: #ffffff; /* Text color */
   background-color: #4d5ae5; /* Button background color */
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners */
-  margin-top: 48px; /* Margin from heading */
-  width: 169px; /* Button width */
-  height: 56px; /* Button height */
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
@@ -121,48 +100,31 @@ li {
 .button:hover,
 .button:focus {
   background-color: #404bbf; /* Цвет фона кнопки при наведении или фокусе */
-  outline: none; /* Убираем стандартную рамку при фокусе */
 }
-/* Second section About US */
-.about-section 
-/* Hidden H2 header */
+/* 2nd section About US */
+.about-section {
+}
+/*2nd section Hidden H2 header */
+.header-two {
+}
 .visual-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
+/* 2nd section UL styles */
 .about-list {
-  display: flex;
-  gap: 24px;
-  max-width: 1128px;
-  margin: 0 auto;
-  padding: 120px 120px 156px 156px;
-  justify-content: center;
 }
+/* 2nd section LI styles */
 .about-items {
-  width: 264px;
-  height: 104px;
 }
-/* H3 header styles */
+/* 2nd section H3 header styles */
 .header-three {
-  margin: 0 0 8px 0;
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
-/* Paragraph styles */
+/* 2nd section Paragraph styles */
 .text {
-  width: 264px;
-  height: 72px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -172,129 +134,57 @@ li {
 }
 /* Third Section - Our Team  */
 .team-section {
-  height: 732px;
   background-color: #f4f4fd;
 }
-/* H2 styles */
+/* 3rd section H2 styles */
 .header-two {
-  width: 162px; /* Фиксированная ширина заголовка */
-  margin: 0 auto 72px; /* Центрирование с отступами */
   font-weight: 700;
   font-size: 36px;
   line-height: 40px; /* Высота строки равна высоте текста */
   color: #2e2f42;
-  text-align: center;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  display: block; /* Блоковый элемент для правильного позиционирования */
-  padding-top: 120px;
-  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
 }
-/*team ul styles */
+/* 3rd section UL styles */
 .team-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
 }
-/* team li styles */
+/* 3rd section LI styles */
 .team-items {
-  width: 264px;
-  height: 380px;
   background-color: #ffffff;
-  border-radius: 4px; /* Закруглённые углы */
-  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
-    0px 1px 6px 0px #2e2f4214; /* Тени */
 }
-/* team images styles */
 .team-section img {
-  width: 264px;
-  height: 260px;
-  display: block;
 }
-/* team H3 styles */
 .team-section .header-three {
-  text-align: center;
-  margin-top: 32px;
 }
-/* team text styles */
 .team-section .text {
-  text-align: center;
-  margin-top: 8px;
-  margin-bottom: 32px;
 }
-/*Fourth Section - Portfolio */
+/*4th Section - Portfolio */
 .portfolio-section {
-  width: 100%;
-  max-width: 1128px;
-  height: 100%;
-  max-height: 1000px;
-  margin: 120px 156px 120px 156px;
 }
 /* portfolio H2 styles */
 .portfolio-section .header-two {
-  display: block; /* Убедимся, что элемент ведет себя как блочный */
-  text-align: center;
-  width: 218px;
-  padding-top: 0;
-  text-transform: capitalize;
-  margin-bottom: 72px;
 }
-/* portfolio UL styles */
-.portfolio-list-one,
-.portfolio-list-two {
-  display: inline-flex;
-  gap: 24px; /* Отступы между элементами списка */
-  justify-content: center; /* Центровка всех элементов в списке */
-  padding-left: 0px;
-  margin: 0;
+/* 4th section portfolio UL styles */
+.portfolio-list {
 }
-.portfolio-list-two {
-  padding-top: 48px;
-}
-/* portfolio LI styles */
+/* 4th section portfolio LI styles */
 .portfolio-items {
-  border: 1px solid #e7e9fc;
-  box-sizing: border-box; /* Учитываем бордер в общих размерах */
-  width: 360px;
-  height: 420px;
 }
-/* portfolio IMG styles */
+/* 4th section portfolio IMG styles */
 .portfolio-section img {
-  width: 360px;
-  height: 300px;
-  display: block;
 }
-/* portfolio H3 styles */
+/* 4th section portfolio H3 styles */
 .portfolio-section .header-three {
-  padding-top: 32px;
-  padding-left: 16px;
-  margin: 0 0 0; /* Отступы внутри элемента */
 }
-/* portfolio Text styles */
+/* 4th section portfolio Text styles */
 .portfolio-section .text {
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-bottom: 32px;
-  margin: 0 0 0; /* Отступы внутри элемента */
 }
 /* Footer section */
 .footer-section {
-  width: 100%;
-  max-width: 1440px;
-  height: 312px;
-  margin: 0 auto;
   background: #2e2f42;
-  display: flex;
-  justify-content: flex-start; /* Выравнивание содержимого по левому краю */
-  align-items: center; /* Вертикальное выравнивание содержимого */
-  padding: 100px 0; /* Отступы сверху и снизу */
-  box-sizing: border-box; /* Учитываем padding в общей высоте */
 }
 .footer-info {
-  width: 264px;
-  height: 112px;
-  margin: 0 0 0 156px; /* Отступ слева */
 }
 .footer-logo {
   margin-bottom: 16px; /* Расстояние между логотипом и навигацией */
@@ -303,7 +193,7 @@ li {
   color: #4d5ae5;
   text-transform: uppercase; /* Текст в верхнем регистре */
 }
-.logo-part {
+.footer-logo .logo-part {
   color: #f4f4fd; /* Цвет для "Studio" */
 }
 .footer-section .footer-logo:hover,
@@ -316,7 +206,6 @@ li {
 }
 .footer-section .text {
   color: #f4f4fd;
-  text-align: left;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
