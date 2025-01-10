@@ -16,11 +16,9 @@ li {
   list-style-type: none; /* Remove default bullet points */
 }
 /* Header styles */
-.header-section {
-}
+.header-section 
 /* Navigation styles */
-.header-nav {
-}
+.header-nav 
 /* logotype  */
 .header-logo {
   font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
@@ -41,11 +39,7 @@ li {
   color: #404bbf;
 }
 /* Navigation UL styles */
-.nav-list {
-}
-.nav-items {
-}
-.nav-link {
+.nav-list .nav-items .nav-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -61,8 +55,7 @@ li {
   font-style: normal;
 }
 /* Address section UL styles */
-.address-list {
-}
+.address-list 
 /* Address section LI styles */
 .address-items {
   font-size: 16px;
@@ -104,19 +97,14 @@ li {
   background-color: #404bbf; /* Цвет фона кнопки при наведении или фокусе */
 }
 /* 2nd section About US */
-.about-section {
-}
+.about-section 
 /*2nd section Hidden H2 header */
-.header-two {
-}
-.visual-hidden {
-}
+.header-two 
+.visual-hidden 
 /* 2nd section UL styles */
-.about-list {
-}
+.about-list 
 /* 2nd section LI styles */
-.about-items {
-}
+.about-items 
 /* 2nd section H3 header styles */
 .header-three {
   font-weight: 500;
@@ -150,40 +138,30 @@ li {
   text-align: center;
 }
 /* 3rd section UL styles */
-.team-list {
-}
+.team-list 
 /* 3rd section LI styles */
 .team-items {
   background-color: #ffffff;
 }
-.team-section img {
-}
-.team-section .header-three {
-}
-.team-section .text {
-}
+.team-section img 
+.team-section .header-three 
+.team-section .text 
 /*4th Section - Portfolio */
-.portfolio-section {
-}
+.portfolio-section 
 /* portfolio H2 styles */
 .portfolio-section .header-two {
   text-align: center;
 }
 /* 4th section portfolio UL styles */
-.portfolio-list {
-}
+.portfolio-list 
 /* 4th section portfolio LI styles */
-.portfolio-items {
-}
+.portfolio-items 
 /* 4th section portfolio IMG styles */
-.portfolio-section img {
-}
+.portfolio-section img 
 /* 4th section portfolio H3 styles */
-.portfolio-section .header-three {
-}
+.portfolio-section .header-three 
 /* 4th section portfolio Text styles */
-.portfolio-section .text {
-}
+.portfolio-section .text 
 /* Footer section */
 .footer-section {
   background: #2e2f42;
