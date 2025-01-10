@@ -121,7 +121,7 @@ li {
 .text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: #434455;
   letter-spacing: 0.02em;
   text-align: left;
@@ -134,9 +134,8 @@ li {
 .header-two {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px; /* Высота строки равна высоте текста */
   color: #2e2f42;
-  line-height: 1.11;
+  line-height: 1.11; /* Высота строки равна высоте текста */
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
