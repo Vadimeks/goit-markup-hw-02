@@ -58,6 +58,7 @@ li {
 }
 /* Navigotion Address block */
 .nav-address {
+  font-style: normal;
 }
 /* Address section UL styles */
 .address-list {
@@ -86,6 +87,7 @@ li {
   color: #ffffff; /* Text color */
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 /* 1st section Button styles */
 .button {
@@ -145,6 +147,7 @@ li {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
 }
 /* 3rd section UL styles */
 .team-list {
@@ -164,6 +167,7 @@ li {
 }
 /* portfolio H2 styles */
 .portfolio-section .header-two {
+  text-align: center;
 }
 /* 4th section portfolio UL styles */
 .portfolio-list {
@@ -184,10 +188,10 @@ li {
 .footer-section {
   background: #2e2f42;
 }
-.footer-info {
-}
 .footer-logo {
-  margin-bottom: 16px; /* Расстояние между логотипом и навигацией */
+  font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
+  font-size: 18px; /* Размер шрифта */
+  font-weight: 700; /* Жирный шрифт */
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
